@@ -4,7 +4,8 @@
   "description": "A cross browser solution to scrolling during drag and drop.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "rm -rf lib && babel src --out-dir lib",
+    "build": "babel src --out-dir lib",
+    "build_linux": "rm -rf lib && babel src --out-dir lib",
     "lint": "eslint src",
     "pretest": "npm run lint",
     "test": "mocha test",
